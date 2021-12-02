@@ -5,6 +5,7 @@ Clone The Repository
 Switch To **shakthivel-dev-branch** Branch
 
 ## Application Setup
+Go Into The **song-app** folder
 Enter **npm install** to install the **node_modules**
 
 ## Run The Application
