@@ -1,15 +1,15 @@
 # Instructions To Run The Code
 
 ## Initial Setup
-Clone The Repository
-Switch To **shakthivel-dev-branch** Branch
+- Clone The Repository
+- Switch To **shakthivel-dev-branch** Branch
 
 ## Application Setup
-Go Into The **song-app** folder
-Enter **npm install** to install the **node_modules**
+- Go Into The **song-app** folder
+- Enter **npm install** to install the **node_modules**
 
 ## Run The Application
-Enter **npm start** to run the application
+- Enter **npm start** to run the application
 
 # tech_intern_challenge
 
