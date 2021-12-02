@@ -27,6 +27,14 @@ $ npm install
 $ npm start
 ```
 
+## Screenshots of Application
+
+### Landing Page
+![landing_page](/images/LandingPage.png)
+
+### Song Table Page
+![table_page](/images/SongTable.png)
+
 # tech_intern_challenge
 
 Build a simple web application that reads the json (attached) and displays the content in a tabular format. Make sure to discard records that has invalid release date on them. You may try adding features like sorting and search options on the page. 
