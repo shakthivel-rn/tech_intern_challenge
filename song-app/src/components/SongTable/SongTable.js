@@ -1,16 +1,31 @@
 import Navigationbar from "../Navigationbar/Navigationbar"
-import React, { useMemo } from 'react'
+import React, { useEffect } from 'react'
 import { useTable, usePagination, useSortBy, useGlobalFilter } from 'react-table'
 import GlobalFilter from './GlobalFilter'
 import { Button } from 'react-bootstrap'
 import { COLUMNS } from './Columns'
+import { useSelector, useDispatch } from 'react-redux'
+import { songSliceActions } from '../../store/songSlice'
 import './SongTable.css'
 
 const songData = require('../../data/songData.json')
 
 const SongTable = () => {
-    const columns = useMemo(() => COLUMNS, [])
-    const data = useMemo(() => songData, [])
+    const dispatch = useDispatch()
+    const validatedSongData = useSelector(state => state.songSlice.songData)
+
+    useEffect(() => {
+        const validateData = () => {
+            dispatch(songSliceActions.removeInvalidDateAndStoreSongData(songData))
+        }
+
+        validateData()
+    }, [dispatch])
+    
+    
+    
+    const columns = COLUMNS
+    const data = validatedSongData
 
     const tableInstance = useTable({
         columns,
