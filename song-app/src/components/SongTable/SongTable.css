@@ -1,0 +1,45 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+table td, table th {
+    border: 1px solid #ddd;
+  }
+  
+table tr:nth-child(even){background-color: #f2f2f2;}
+  
+table tr:hover {background-color: #ddd;}
+  
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color:#c6002b;
+    color: rgb(238, 238, 238);
+  }
+
+.paginationButtons {
+    font-family: 'Prompt', sans-serif;
+    background-color:  #c6002b;
+    border-color: #c6002b;
+    color: rgb(238, 238, 238);
+}
+
+.paginationButtons:hover {
+    background-color: #c6002b;
+    border-color: #c6002b;
+}
+
+.paginationButtons::selection {
+    background-color: #c6002b;
+    border-color: #c6002b;
+}
+
+.btn-primary-disabled, .btn-primary:disabled{
+  background-color:#c6002b;
+  border-color: #c6002b;
+  color:  rgb(238, 238, 238);
+}
